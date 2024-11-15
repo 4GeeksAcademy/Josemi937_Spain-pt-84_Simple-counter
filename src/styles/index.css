@@ -10,3 +10,26 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+body{
+    background: linear-gradient(to left, lime 28px, red 77%, cyan);
+}
+
+.numeros{
+    text-align: center;
+    padding-top: 10%;
+    
+
+   
+}
+.numeros div{
+    display: inline-block;
+    font-size: 200px;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+
+}
+.buttons{
+    padding-top: 50px;
+}

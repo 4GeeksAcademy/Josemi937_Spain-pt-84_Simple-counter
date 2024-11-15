@@ -4,23 +4,20 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
+const Contador = ({ unidadesMil, centenas, decenas, unidades }) => {
+    return (
+        <div className="numeros">
+            <div className="icono">
+                <i className="far fa-clock"></i>
+            </div>
+            <div className="cuarto">{unidadesMil}</div>
+            <div className="tercero">{centenas}</div>
+            <div className="segundo">{decenas}</div>
+            <div className="primero">{unidades}</div>
+        </div>
+        
+        
+    );
+}
 
-export default Home;
+export default Contador
